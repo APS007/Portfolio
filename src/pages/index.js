@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import profilePic from "../../public/images/profile/developer-pic-1.png"
+import profilePic from "../../public/images/profile/Homepage photocopy.jpg"
 import Image from 'next/image'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
@@ -18,7 +18,7 @@ export default function Home() {
       <main className=' text-black w-full min-h-screen overflow-hidden'>
        <Layout className='pt-0'>
         <div className="flex items-center justify-between w-full">
-          <div className='w-1/2'>
+          <div className='w-1/2 p-20 mb-10'>
             <Image src={profilePic} alt="Abhishek Singh Photo" className='w-full h-auto' />
           </div>
           <div className='w-1/2 flex flex-col items-center self-center'>
@@ -28,7 +28,7 @@ export default function Home() {
               Explore my latest projects and articles, showcasing my expertise in React.js and web development.
             </p>
             <div className='flex items-center self-start mt-2'>
-              <Link href="/Abhishek_ReactJS_Dev.pdf" target={"_blank"}
+              <Link href="/Abhishek_ReactJS_Dev.docx" target={"_blank"}
               className='flex items-center bg-black text-white p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-white hover:text-black border-2 border-solid border-transparent hover:border-black'
               download={true}
               >
