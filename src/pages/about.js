@@ -13,7 +13,7 @@ const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 })
-    const isInView = useInView(ref,{once: true})
+    const isInView = useInView(ref, { once: true })
     useEffect(() => {
         if (isInView) {
             motionValue.set(value)
@@ -44,9 +44,9 @@ const about = () => {
                     <div className='grid w-full grid-cols-8 gap-16'>
                         <div className='col-span-3 flex-flex-col items-start justify-start'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-black/75'>Biography</h2>
-                            <p className='font-medium my-4'> Hi, I am Abhishek, a Full Stack Developer with a passion for creating beautiful , functional,
+                            <p className='font-medium my-4'> Hi, I am Abhishek, a Full Stack Developer with a passion for creating beautiful, functional,
                                 and user-centered digital experiences. With 3 years of experience in the field. I am always looking for
-                                new and innovative ways to bring my clients visions to life.
+                                new and innovative ways to bring my clients' visions to life.
                             </p>
                             <p className='font-medium'>
                                 - Whether I am working on a website, mobile app, or
@@ -73,14 +73,14 @@ const about = () => {
                             </div>
                             <div className='flex flex-col items-end justify-center'>
                                 <span className='inline-block text-7xl font-bold'>
-                                 <AnimatedNumbers value={3} />+
+                                    <AnimatedNumbers value={3} />+
                                 </span>
                                 <h2 className='text-xl font-medium capitalize text-black/75'>Years of Experience</h2>
                             </div>
                         </div>
                     </div>
-                    <Skills/>
-                    <Experience/>
+                    <Skills />
+                    <Experience />
                 </Layout>
             </main>
 
